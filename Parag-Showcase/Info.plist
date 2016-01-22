@@ -5,6 +5,13 @@
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
         <string>fbapi20130214</string>
         <string>fbapi20130410</string>
         <string>fbapi20130702</string>
@@ -24,18 +31,24 @@
         <dict>
             <key>facebook.com</key>
             <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
             </dict>
             <key>fbcdn.net</key>
             <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>  <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
             </dict>
             <key>akamaihd.net</key>
             <dict>
-                <key>NSIncludesSubdomains</key> <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+                <false/>
             </dict>
         </dict>
     </dict>
@@ -44,14 +57,14 @@
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>fb{your-app-id}</string>
+                <string>fb173669946330783</string>
             </array>
         </dict>
     </array>
     <key>FacebookAppID</key>
-    <string>{your-app-id}</string>
+    <string>173669946330783</string>
     <key>FacebookDisplayName</key>
-    <string>{your-app-name}</string>
+    <string>Parag-Showcase</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EWi-pN-kyM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,11 +9,56 @@
         <mutableArray key="HelveticaNeue.ttc">
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--Scroll View Controller-->
+        <scene sceneID="9IJ-mI-55K">
+            <objects>
+                <viewController id="H0d-mW-Bnd" customClass="ScrollViewController" customModule="Parag_Showcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hOD-ib-Oe0"/>
+                        <viewControllerLayoutGuide type="bottom" id="MZO-Xe-6O3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FnC-KN-hzd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-mG-fyn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5hL-mG-fyn" firstAttribute="top" secondItem="FnC-KN-hzd" secondAttribute="top" id="Pjd-g3-mGK"/>
+                            <constraint firstItem="5hL-mG-fyn" firstAttribute="bottom" secondItem="MZO-Xe-6O3" secondAttribute="top" id="ZlP-cF-iuS"/>
+                            <constraint firstItem="5hL-mG-fyn" firstAttribute="leading" secondItem="FnC-KN-hzd" secondAttribute="leading" id="c8R-a9-v9j"/>
+                            <constraint firstAttribute="trailing" secondItem="5hL-mG-fyn" secondAttribute="trailing" id="kLD-ER-1rA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DA3-q9-dpS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Fdg-16-4zh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hBv-bV-F8f">
+                                <rect key="frame" x="447" y="4" width="133" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Skip Intro!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="xwa-Y9-Ztt"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="5hL-mG-fyn" id="eUH-BD-VbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxp-Fd-lHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="-443"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -57,11 +102,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvh-aB-Whd" customClass="MaterialView" customModule="Parag_Showcase" customModuleProvider="target">
                                 <rect key="frame" x="20" y="60" width="560" height="128"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="VkI-ak-eWF">
-                                        <rect key="frame" x="20" y="12" width="520" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="VkI-ak-eWF">
+                                        <rect key="frame" x="20" y="10" width="520" height="108"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="23C-Ln-TU4">
-                                                <rect key="frame" x="0.0" y="22" width="65" height="65"/>
+                                                <rect key="frame" x="0.0" y="21" width="65" height="65"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-tT-fmF" customClass="MaterialButton" customModule="Parag_Showcase" customModuleProvider="target">
                                                 <rect key="frame" x="105" y="39" width="415" height="30"/>
@@ -113,14 +158,14 @@
                                             <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esU-7O-qyx"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnk-8R-iBr">
-                                        <rect key="frame" x="20" y="24" width="174" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnk-8R-iBr">
+                                        <rect key="frame" x="20" y="24" width="157.5" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.41686436519999998" green="0.41686436519999998" blue="0.41686436519999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1l0-8g-9cJ" customClass="MaterialTextField" customModule="Parag_Showcase" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="75" width="520" height="35"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1l0-8g-9cJ" customClass="MaterialTextField" customModule="Parag_Showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="74" width="520" height="35"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="S6S-76-FuZ"/>
@@ -206,7 +251,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUO-L5-XMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="374"/>
+            <point key="canvasLocation" x="1171" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bKX-a5-EW5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWi-pN-kyM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rpR-ie-EP6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H0d-mW-Bnd" kind="relationship" relationship="rootViewController" id="dY7-3w-FQu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ss8-O6-gEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="-443"/>
         </scene>
     </scenes>
     <resources>

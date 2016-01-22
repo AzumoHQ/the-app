@@ -20,6 +20,13 @@
 		753527C51C5182400032A1D4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753527C21C5182400032A1D4 /* FBSDKCoreKit.framework */; };
 		753527C61C5182400032A1D4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753527C31C5182400032A1D4 /* FBSDKLoginKit.framework */; };
 		753527C91C518B440032A1D4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753527C81C518B440032A1D4 /* DataService.swift */; };
+		757ADB341C52CB30003ABC1E /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ADB331C52CB30003ABC1E /* ScrollViewController.swift */; };
+		757ADB371C52CC81003ABC1E /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ADB351C52CC81003ABC1E /* ViewController0.swift */; };
+		757ADB381C52CC81003ABC1E /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757ADB361C52CC81003ABC1E /* ViewController0.xib */; };
+		757ADB3D1C52CCA0003ABC1E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ADB3B1C52CCA0003ABC1E /* ViewController2.swift */; };
+		757ADB3E1C52CCA0003ABC1E /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757ADB3C1C52CCA0003ABC1E /* ViewController2.xib */; };
+		757ADB411C52CCB4003ABC1E /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ADB3F1C52CCB4003ABC1E /* ViewController1.swift */; };
+		757ADB421C52CCB4003ABC1E /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757ADB401C52CCB4003ABC1E /* ViewController1.xib */; };
 		A61CC3D8BFF259EB21FD8C69 /* Pods_Parag_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B865616F345DEFD428A4B6BE /* Pods_Parag_Showcase.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		753527C21C5182400032A1D4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		753527C31C5182400032A1D4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		753527C81C518B440032A1D4 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		757ADB331C52CB30003ABC1E /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		757ADB351C52CC81003ABC1E /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0.swift; sourceTree = "<group>"; };
+		757ADB361C52CC81003ABC1E /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+		757ADB3B1C52CCA0003ABC1E /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		757ADB3C1C52CCA0003ABC1E /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		757ADB3F1C52CCB4003ABC1E /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		757ADB401C52CCB4003ABC1E /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
 		89BB3E80AFBAB8EC41BEA9D7 /* Pods-Parag-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parag-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parag-Showcase/Pods-Parag-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 		9166D2026F8C83B360C1DD73 /* Pods-Parag-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parag-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parag-Showcase/Pods-Parag-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
 		B865616F345DEFD428A4B6BE /* Pods_Parag_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parag_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +123,7 @@
 		753527B31C5156210032A1D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				757ADB1E1C52B7F4003ABC1E /* SubViewControllers */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -161,6 +176,20 @@
 				753527C81C518B440032A1D4 /* DataService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		757ADB1E1C52B7F4003ABC1E /* SubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				757ADB331C52CB30003ABC1E /* ScrollViewController.swift */,
+				757ADB351C52CC81003ABC1E /* ViewController0.swift */,
+				757ADB361C52CC81003ABC1E /* ViewController0.xib */,
+				757ADB3F1C52CCB4003ABC1E /* ViewController1.swift */,
+				757ADB401C52CCB4003ABC1E /* ViewController1.xib */,
+				757ADB3B1C52CCA0003ABC1E /* ViewController2.swift */,
+				757ADB3C1C52CCA0003ABC1E /* ViewController2.xib */,
+			);
+			name = SubViewControllers;
 			sourceTree = "<group>";
 		};
 		EDE84093BE853918F6C7045F /* Frameworks */ = {
@@ -232,9 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757ADB421C52CCB4003ABC1E /* ViewController1.xib in Resources */,
+				757ADB3E1C52CCA0003ABC1E /* ViewController2.xib in Resources */,
 				753527AC1C5156010032A1D4 /* LaunchScreen.storyboard in Resources */,
 				753527A91C5156010032A1D4 /* Assets.xcassets in Resources */,
 				753527A71C5156010032A1D4 /* Main.storyboard in Resources */,
+				757ADB381C52CC81003ABC1E /* ViewController0.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757ADB371C52CC81003ABC1E /* ViewController0.swift in Sources */,
 				753527BF1C5161FE0032A1D4 /* MaterialTextField.swift in Sources */,
+				757ADB411C52CCB4003ABC1E /* ViewController1.swift in Sources */,
 				753527C91C518B440032A1D4 /* DataService.swift in Sources */,
 				753527B81C515A290032A1D4 /* MaterialView.swift in Sources */,
+				757ADB3D1C52CCA0003ABC1E /* ViewController2.swift in Sources */,
+				757ADB341C52CB30003ABC1E /* ScrollViewController.swift in Sources */,
 				753527A41C5156010032A1D4 /* ViewController.swift in Sources */,
 				753527A21C5156010032A1D4 /* AppDelegate.swift in Sources */,
 				753527BB1C515A840032A1D4 /* Constants.swift in Sources */,
